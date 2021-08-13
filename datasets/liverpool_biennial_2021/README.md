@@ -1,15 +1,13 @@
 # Liverpool biennial 2021 dataset
 
-`LB2021_data.csv` - includes data from the LB2021 web (https://www.liverpoolbiennial2021.com/) and new (generated/preprocessed) data:
+`LB2021_data.csv` - includes important metadata surrounding the Liverpool Biennial collection. This data is taken from the [LB2021 website](https://www.liverpoolbiennial2021.com/)
 - 'artist' - artist name (from the web)
-- 'artist_url' - link to artist page (from the web) 
-- 'code' - id of artist (from the web, related to the artist web page) 
+- 'featured_text' - text about the artwork extracted from the web - (preprocessed data, important for keywords_extraction) 
 - 'img_url' - url to the image (from the web)
 - 'data_caption' - text below the image (from the web, includes artist name, title and year)
-- 'title' - original artwork title (from the web)
 - 'clean_title' - title after preprocessing - (important for generating images from titles)
-- 'img_path' - path to the original artwork image (currently specified for Eva's local machine)
-- 'generated_img_path' - path to the (from title) generated image on Eva's local machine
-- 'featured_text' - text about the artwork extracted from the web - (preprocessed data, important for keywords_extraction) 
-- 'keywords' - the keywords extracted from the featured text 
-- 'flickr_caption' - the caption generated using VLP model (result of runing the captioning model, important for creating attention maps)
+- 'LB_web_artist_url' - link to artist page (from the web) 
+- 'code' - id of artist (from the web, related to the artist web page) 
+- 'path_to_original_image' - path to original image from root of repository. Note: the folders in `datasets/liverpool_biennial_2021/original_images` need to be unzipped in place for these paths to be correct.
+
+The 50 artworks presented at LB2021 are zipped in three folders in `datasets/liverpool_biennial_2021/original_images`. These have been sourced from the [LB2021 website](https://www.liverpoolbiennial2021.com/) and permission has been granted for them to be uploaded to Git.
