@@ -9,5 +9,6 @@
 - 'LB_web_artist_url' - link to artist page (from the web) 
 - 'code' - id of artist (from the web, related to the artist web page) 
 - 'path_to_original_image' - path to original image from root of repository. Note: the folders in `datasets/liverpool_biennial_2021/original_images` need to be unzipped in place for these paths to be correct.
+- 'generated_img_path' - the path to the machine generated images following use of the big-sleep module in this repository's colab notebook.
 
 The 50 artworks presented at LB2021 are zipped in three folders in `datasets/liverpool_biennial_2021/original_images`. These have been sourced from the [LB2021 website](https://www.liverpoolbiennial2021.com/) and permission has been granted for them to be uploaded to Git.
