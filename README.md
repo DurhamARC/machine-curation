@@ -1,1 +1,7 @@
-# machine curation
+# Machine Curation
+
+This project documents the back end for the 2021 machine curated exhibition, based on the Liverpool Biennial collection. This exhibition can be viewed [here](https://metaobjects.org/testing/liverpoolbiennial/). A number of machine learning models are concatenated together to create a pipeline that transforms image titles into computer generated images, extracts keywords from image descriptions, generates image captions from original artworks and overlays images with heatmaps informed by machine generated captions. Finally, similarity values are deduced that relate machine generated captions and images to one another as well as artworks and keywords extracted from artwork descriptions. This allows viewers of the exhibition to navigate between images in the Liverpool Biennial collection based on a variety of similarity factors. Users construct their own, bespoke pathway through the collection with the aid of ML models.
+
+The purpose of this repository is to present the code that underlies the exhibition that is available at the [link](https://metaobjects.org/testing/liverpoolbiennial/) above. A notebook called `machine_curation.ipynb` is housed at the root of the repository and can be opened in Colab. It documents the process by which the machine curator's input data was computed and the various machine learning models that were used in the process. The folder `datasets` contains the artworks in the Liverpool Biennial collection in compressed form and stores the metadata about the collection that is used in the notebook.
+
+The pipeline was written and designed by Eva Cetinic.
